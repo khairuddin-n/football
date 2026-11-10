@@ -1,4 +1,3 @@
-$schema: https://www.flowlauncher.com/schemas/settings-template.schema.json
 body:
   - type: textBlock
     attributes:
