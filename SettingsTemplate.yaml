@@ -1,0 +1,24 @@
+$schema: https://www.flowlauncher.com/schemas/settings-template.schema.json
+body:
+  - type: textBlock
+    attributes:
+      description: >
+        This plugin uses data from football-data.org. Get a free API key at
+        https://www.football-data.org/client/register (the key is sent to your email),
+        then paste it below.
+  - type: passwordBox
+    attributes:
+      name: apiKey
+      label: football-data.org API key
+      description: Your personal API key. It is stored locally by Flow Launcher and only sent to football-data.org.
+      defaultValue: ""
+  - type: input
+    attributes:
+      name: team
+      label: Favorite club
+      description: >
+        Club name, e.g. Barcelona, Arsenal, Bayern, Inter. You can also pick it from Flow Launcher
+        by typing "fc team <name>". Clubs from the free-tier leagues are supported
+        (Premier League, La Liga, Serie A, Bundesliga, Ligue 1, Eredivisie, Primeira Liga,
+        Championship, Brasileirão).
+      defaultValue: ""
