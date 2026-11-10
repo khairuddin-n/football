@@ -1,9 +1,8 @@
 name: Release
 
+# Run manually from the Actions tab (Release → Run workflow) when you want to publish
+# the version in plugin.json. Pushing to main no longer creates a release.
 on:
-  push:
-    branches: [main]
-    paths: [plugin.json]
   workflow_dispatch:
 
 permissions:
