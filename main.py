@@ -272,6 +272,8 @@ def route(text):
     words = text.split()
     head, rest = (words[0] if words else ""), " ".join(words[1:])
 
+    if not fc.api_key():
+        raise fc.NoApiKey("football-data.org API key is not set")
     if head == "team":
         return view_team_picker(rest)
 

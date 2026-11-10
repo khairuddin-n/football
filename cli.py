@@ -263,6 +263,8 @@ def run(text):
         return
     if head == "setup":
         return cmd_setup()
+    if not fc.api_key():
+        raise fc.NoApiKey("football-data.org API key is not set")
     if head == "team":
         return cmd_team(rest)
 
